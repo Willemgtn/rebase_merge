@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(225, 225, 225, 1);
+  display: flex;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+/* .center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin:0 auto;
+} */
+.w33 {
+  width: 33.3%;
+  padding: 0 2%;
+}
+.w50 {
+  width: 50%;
+  padding: 0 2%;
+}
+.clear {
+  clear: both;
+}
+/* .f-left{float:left;}
+.f-right{float:right;} */
+.center {
+  max-width: 1280px;
+  padding: 0 2%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* .f-left{float:none;} */
+.f-right {
+  /* float:none; */
+  justify-content: flex-end;
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+.d-flex {
+  display: flex;
+}
+
+/* Estilização do site */
+
+main.dash {
+  flex: 5 0 10%;
+  overflow-x: hidden;
+}
+main.dash header {
+  background: #455a64;
+  /* padding: 10px; */
+  color: white;
+}
+main.dash header .menu-btn {
+  cursor: pointer;
+  padding: 10px;
+}
+main.dash header a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+main.dash section {
+  margin: 10px 10px;
+  background-color: rgb(200, 200, 200);
+  padding: 16px;
+}
+main.dash section h2 {
+  width: 100%;
+  padding: 0 2%;
+}
+main.dash section#views > div {
+  background: white;
+  padding: 10px;
+  margin: 3px;
+  flex-grow: 1;
+  /* asdf */
+}
+
+section table tr td {
+  padding: 0 5px;
+  border-top: 1px solid black;
+}
+
+.min-flex {
+  flex: 0.5 0 0 !important;
+}
+
+div.all-flex-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+div.all-flex-table > div {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+div.all-flex-table > div > * {
+  flex-grow: 2;
+  flex-basis: 10%;
+}
+@media screen and (max-width: 500px) {
+  div.all-flex-table > div > * {
+    word-break: break-all;
+  }
+  section#panelUsers div.all-flex-table > div,
+  section#viewMetrics div.all-flex-table > div {
+    flex-direction: row;
+  }
+  div.all-flex-table > div {
+    flex-direction: column;
+  }
+  div.all-flex-table > div > div.mob-btn > * {
+    padding: 10px;
+  }
+  div.all-flex-table > div.pagination > * {
+    padding: 10px;
+  }
+  div.all-flex-table > div.pagination {
+    flex-direction: row;
+  }
+  textarea {
+    height: 200px;
+  }
+}
+
+div.all-flex-table > div.pagination > * {
+  flex-grow: 0;
+  flex-basis: 5%;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+div.all-flex-table > div.pagination {
+  justify-content: center;
+}
+div.all-flex-table > div > div.f-space {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.listSlide img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Anchors / LINKS / BUTTONS DECORATION */
+
+.box-alert {
+  text-align: center;
+}
+.box-alert.ok {
+  background-color: lightgreen;
+}
+.box-alert.error {
+  background-color: pink;
+}
+.red-box {
+  text-align: center;
+  color: white;
+  background: #f75353;
+  font-size: 1em;
+  width: 100%;
+  padding: 0.5em 2%;
+}
+
+a.edit-btn {
+  text-decoration: none;
+  border: 1px solid black;
+  color: white;
+  background: orange;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+}
+
+a.delete-btn {
+  text-decoration: none;
+  border: 1px solid black;
+  color: white;
+  background: lightcoral;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+}
+
+a.btn {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding: 6px 12px;
+}
+a.btn.green {
+  background: lightgreen;
+}
+a.btn.red {
+  background: lightcoral;
+}
+a.btn.edit {
+  background: orange;
+}
+/* Anchors / LINKS / BUTTONS DECORATION */
+.cardsWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.cardsWrapper > div {
+  border-radius: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  max-width: 300px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.cardsWrapper > div > img {
+  width: 100%;
+}
+.cardsWrapper > div > ul {
+  list-style: none;
+  margin: 10px;
+}
